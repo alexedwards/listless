@@ -1,6 +1,8 @@
 # Listless
 
-TODO: Write a gem description
+Listless is an example gem created for a series of blog posts about [how to make a rubygem](http://www.alexedwards.net/blog/how-to-make-a-rubygem), and not intended for production use.
+
+It provides a helper method to convert a Ruby Array into a HMTL unordered list.
 
 ## Installation
 
@@ -18,7 +20,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Require the Gem:
+
+    require 'listless'
+
+### Creating unordered lists
+
+You can create an unordered list from an Array using the `ul` method. For example:
+
+    Listless.ul ['foo', 'bar']
+    #=> "<ul><li>foo</li><li>bar</li></ul>"
 
 ## Contributing
 
