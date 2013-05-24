@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+require 'listless'
+
+array = ARGV[0].split(',')
+puts Listless.ul(array)
